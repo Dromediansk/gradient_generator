@@ -6,9 +6,25 @@
 </head>
 <body id="gradient">
 	<h1>Background Generator</h1>
-	<input class="color1" type="color" name="color1" value="#00ff00">
-	<input class="color2" type="color" name="color2" value="#ff0000">
-	<h2>Current CSS Background</h2>
+	<div id='container'>
+		<p>First color:</p>
+		<input class="color1" type="color" name="color1" value="#00ff00">
+		<p>Second color:</p>
+		<input class="color2" type="color" name="color2" value="#ff0000">
+		<select id="gradientDirection">
+	  		<option value="right">to right</option>
+	  		<option value="left">to left</option>
+	  		<option value="top">to top</option>
+	 		<option value="bottom" selected>to bottom</option>
+	  		<option value="topright">to right top</option>
+	  		<option value="topleft">to left top</option>
+	  		<option value="bottomright">to right bottom</option>
+	  		<option value="bottomleft">to left bottom</option>
+		</select>
+		<button class="random">Random Gradient</button>
+	</div>
+		<h2>Current CSS Background</h2>
+		<h3></h3>
 
 	<script type="text/javascript" src="script.js"></script>
 </body>

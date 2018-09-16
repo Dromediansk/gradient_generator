@@ -1,27 +1,74 @@
-body {
-	font: 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    top: 15%;
-	background: linear-gradient(to right, red , yellow); /* Standard syntax */
+html {
+  height: 100%;
+}
 
+body {
+  width: auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .45);
+  text-align: center;
+  text-transform: uppercase;
+  top: 15%;
+  background: linear-gradient(to right, red, yellow) fixed;
+  /* Standard syntax */
+}
+
+#container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#container * {
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#container input {
+    margin-left: 0;
+}
+
+#container p {
+    margin-right: 5px;
+}
+
+#container select,
+#container input {
+    padding: 10px;
 }
 
 h1 {
-    font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    width: 100%;
+  font-family: inherit;
+  font-size: 2.5em;
+  letter-spacing: .25em;
+  color: rgba(0, 0, 0, .5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .35em;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#color {
+
 }
 
 h3 {
-	font: 900 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0.01em;
+  font: 900 1em 'Raleway', sans-serif;
+  color: rgba(0, 0, 0, .5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.002em;
+}
+
+.random {
+  margin: 2em auto;
+  padding: 5px;
+  border: 3px solid grey;
+}
+
+.random:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ddd;
 }

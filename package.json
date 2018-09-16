@@ -1,0 +1,22 @@
+{
+  "name": "gradient_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "browserify script.js > bundle.js && live-server";
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dromediansk/gradient_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dromediansk/gradient_generator/issues"
+  },
+  "homepage": "https://github.com/Dromediansk/gradient_generator#readme"
+}
