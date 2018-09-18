@@ -26,6 +26,7 @@ body {
 
 #container input {
     margin-left: 0;
+    outline: none;
 }
 
 #container p {
@@ -35,6 +36,14 @@ body {
 #container select,
 #container input {
     padding: 10px;
+    outline: none;
+}
+
+#container select:hover,
+#container input:hover {
+  cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ddd;
 }
 
 h1 {
@@ -49,10 +58,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-#color {
-
-}
-
 h3 {
   font: 900 1em 'Raleway', sans-serif;
   color: rgba(0, 0, 0, .5);
@@ -62,13 +67,23 @@ h3 {
 }
 
 .random {
+  font-size: 1.1em;
   margin: 2em auto;
-  padding: 5px;
+  padding: 8px;
   border: 3px solid grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  outline: none;
 }
 
 .random:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, .5);
     color: #ddd;
+}
+
+.random:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
